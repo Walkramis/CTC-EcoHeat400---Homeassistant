@@ -1,11 +1,18 @@
-# CTC-GSi-8---Homeassistant
-For connection between CTC GSi and Homeassistant (testet with GSi 8 and GSi 16)It probably works on EcoHeat 400 series as well.
+# CTC-EcoHeat400---Homeassistant
+This is a fork of @Kasper-73's repositor, all credit to him for doing the hard work. (Ogiginal: https://github.com/kasper-73/CTC-GSi-8---Homeassistant) 
+
+I updated his script with a couple of small fixes, and adapted it to run on an ESP-12F_Relay_X2 board. THis adds the option to utilize the EcoHeat Smart A and Smart B inputs, that enable a lot of power saving featurs. I only wonder why CTC hides these features so well.....
+
+
+For connection between CTC EcoHeat and Homeassistant (testet with CTC EcoHeat 412).
 I haven't found all the modbus registers yet from the lists in the pdf files
+
+I added a Dallas temperature sensor as well, connected to GPIO2
 
 ![Skærmbillede 2022-11-07 151830](https://user-images.githubusercontent.com/71944008/200332690-383c7424-a406-4df4-b542-bcc13bf7fdfd.png)
 
 
-RJ12 cable cut in half an connected to NodeMCU ESP32
+RJ12 cable cut in half an connected to ESP-12F
 
 Pinout for the RJ12 cable connected to the display of the CTC heat pump
 
@@ -17,12 +24,13 @@ Pinout for the RJ12 cable connected to the display of the CTC heat pump
 
 3: Not used
 
-4: RX GPIO 16
+4: RX GPIO 13
 
-5: Flow control pin GPIO 5 
+5: Flow control pin GPIO 12 
 
-6: TX GPIO 17
+6: TX GPIO 14
 
-![Skærmbillede 2022-11-07 152704](https://user-images.githubusercontent.com/71944008/200334618-07011627-09ad-4e66-bbed-e7b5d6aa3e4d.png)
+![IMG_7518](https://user-images.githubusercontent.com/58219639/226720655-22fad034-ee9d-42ee-974b-83147a12c1c2.jpg)
+
 
 Using Esphome it is possible to read and write modbus.
