@@ -1,7 +1,7 @@
 # CTC-EcoHeat400---Homeassistant
-This is a fork of @Kasper-73's repositor, all credit to him for doing the hard work. (Ogiginal: https://github.com/kasper-73/CTC-GSi-8---Homeassistant) 
+This is a fork of @Kasper-73's repository, all credit to him for doing the hard work. (Ogiginal: https://github.com/kasper-73/CTC-GSi-8---Homeassistant) 
 
-I updated his script with a couple of small fixes, and adapted it to run on an ESP-12F_Relay_X2 board. THis adds the option to utilize the EcoHeat Smart A and Smart B inputs, that enable a lot of power saving featurs. I only wonder why CTC hides these features so well.....
+I updated his script with a couple of small fixes, and adapted it to run on an ESP-12F_Relay_X2 board. This adds the option to utilize the EcoHeat Smart A and Smart B inputs, that enable a lot of power saving featurs. I only wonder why CTC hides these features so well.....
 
 
 For connection between CTC EcoHeat and Homeassistant (testet with CTC EcoHeat 412).
