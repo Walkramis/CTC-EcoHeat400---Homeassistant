@@ -15,9 +15,9 @@ ota:
 
 
 wifi:
-  ssid: 'Stennevej36'
-  password: '1881001881'
-  domain: '.sd.local'
+  ssid: 'SSID'
+  password: '<Password>'
+  
 
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
@@ -72,13 +72,28 @@ select:
       "Allowed": 1
 switch:
   - platform: gpio
-    name: "CTC K?"
+    name: "SMART-A"
+    id: smart_a
     pin: 4
     
   - platform: gpio
-    name: "CTCk??"
+    name: "SMART-B"
+    id: smart_b
     pin: 5          
- 
+  
+  - platform: template
+    name: "SMART-A+B"
+
+    turn_on_action:
+      - switch.turn_on: smart_a
+      - switch.turn_on: smart_b
+    turn_off_action:
+      - switch.turn_off: smart_a
+      - switch.turn_off: smart_b
+
+
+
+
 sensor:
 
   
