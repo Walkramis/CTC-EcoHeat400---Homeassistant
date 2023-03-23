@@ -1,0 +1,168 @@
+- id: '1679598018668'
+  name: CTC Smart Lav pris
+  entities:
+    number.ctc_ecohet412_v2_kurvehaeldning:
+      min: 25
+      max: 85
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Kurvehældning
+      state: '56.0'
+    number.ctc_ecohet412_v2_forskydning:
+      min: -20
+      max: 20
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Forskydning
+      state: '3.0'
+    select.ctc_ecohet412_v2_heating_mode:
+      options:
+      - Auto
+      - 'On'
+      - 'Off'
+      friendly_name: CTC-Ecohet412-v2 Heating mode
+      state: Auto
+    select.ctc_ecohet412_v2_heatpump_blocked:
+      options:
+      - Blocked
+      - Allowed
+      friendly_name: CTC-Ecohet412-v2 Heatpump Blocked
+      state: Allowed
+    switch.ctc_ecohet412_v2_smart_a:
+      friendly_name: CTC Blokering
+      state: 'off'
+    switch.ctc_ecohet412_v2_smart_b:
+      friendly_name: CTC Lav Pris
+      state: 'on'
+    switch.ctc_ecohet412_v2_smart_a_b:
+      friendly_name: CTC Ekstra lav pris
+      state: 'off'
+  metadata: {}
+- id: '1679598041544'
+  name: CTC Smart ekstra lav pris
+  entities:
+    number.ctc_ecohet412_v2_kurvehaeldning:
+      min: 25
+      max: 85
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Kurvehældning
+      state: '56.0'
+    number.ctc_ecohet412_v2_forskydning:
+      min: -20
+      max: 20
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Forskydning
+      state: '3.0'
+    select.ctc_ecohet412_v2_heating_mode:
+      options:
+      - Auto
+      - 'On'
+      - 'Off'
+      friendly_name: CTC-Ecohet412-v2 Heating mode
+      state: Auto
+    select.ctc_ecohet412_v2_heatpump_blocked:
+      options:
+      - Blocked
+      - Allowed
+      friendly_name: CTC-Ecohet412-v2 Heatpump Blocked
+      state: Allowed
+    switch.ctc_ecohet412_v2_smart_a:
+      friendly_name: CTC Blokering
+      state: 'on'
+    switch.ctc_ecohet412_v2_smart_b:
+      friendly_name: CTC Lav Pris
+      state: 'on'
+    switch.ctc_ecohet412_v2_smart_a_b:
+      friendly_name: CTC Ekstra lav pris
+      state: 'off'
+  metadata: {}
+- id: '1679598064492'
+  name: CTC Blokering
+  entities:
+    number.ctc_ecohet412_v2_kurvehaeldning:
+      min: 25
+      max: 85
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Kurvehældning
+      state: '56.0'
+    number.ctc_ecohet412_v2_forskydning:
+      min: -20
+      max: 20
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Forskydning
+      state: '3.0'
+    select.ctc_ecohet412_v2_heating_mode:
+      options:
+      - Auto
+      - 'On'
+      - 'Off'
+      friendly_name: CTC-Ecohet412-v2 Heating mode
+      state: Auto
+    select.ctc_ecohet412_v2_heatpump_blocked:
+      options:
+      - Blocked
+      - Allowed
+      friendly_name: CTC-Ecohet412-v2 Heatpump Blocked
+      state: Allowed
+    switch.ctc_ecohet412_v2_smart_a:
+      friendly_name: CTC Blokering
+      state: 'on'
+    switch.ctc_ecohet412_v2_smart_b:
+      friendly_name: CTC Lav Pris
+      state: 'off'
+    switch.ctc_ecohet412_v2_smart_a_b:
+      friendly_name: CTC Ekstra lav pris
+      state: 'off'
+  metadata: {}
+- id: '1679598094899'
+  name: CTC Normal pris
+  entities:
+    number.ctc_ecohet412_v2_kurvehaeldning:
+      min: 25
+      max: 85
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Kurvehældning
+      state: '56.0'
+    number.ctc_ecohet412_v2_forskydning:
+      min: -20
+      max: 20
+      step: 1
+      mode: box
+      unit_of_measurement: ''
+      friendly_name: CTC-Ecohet412-v2 Forskydning
+      state: '3.0'
+    select.ctc_ecohet412_v2_heating_mode:
+      options:
+      - Auto
+      - 'On'
+      - 'Off'
+      friendly_name: CTC-Ecohet412-v2 Heating mode
+      state: Auto
+    select.ctc_ecohet412_v2_heatpump_blocked:
+      options:
+      - Blocked
+      - Allowed
+      friendly_name: CTC-Ecohet412-v2 Heatpump Blocked
+      state: Allowed
+    switch.ctc_ecohet412_v2_smart_a:
+      friendly_name: CTC Blokering
+      state: 'off'
+    switch.ctc_ecohet412_v2_smart_b:
+      friendly_name: CTC Lav Pris
+      state: 'off'
+    switch.ctc_ecohet412_v2_smart_a_b:
+      friendly_name: CTC Ekstra lav pris
+      state: 'off'
+  metadata: {}
