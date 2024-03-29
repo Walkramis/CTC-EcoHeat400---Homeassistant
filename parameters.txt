@@ -1,0 +1,126 @@
+200-230 seems to correlate with document
+interesting parameters:
+205: vacation days remaining
+206: extra dhw time
+212: inclination
+213: adjustment
+
+
+500: 0
+501: 0.7
+502: 0.8
+503-505: 0
+506: -6
+507: -50
+508: -5
+509: 21
+510: 32 (21)
+511: 12
+512: 9
+513: 50
+514: 0
+515: 0
+516: 70
+517: 5
+518: 2
+519: 5
+520: 0
+521-549: 0.3
+
+
+
+
+550: Changes between 32, 288, 544 and 800. 32 is when Heatpump is off, 288 working in lower tank, 800 and 544 upper tank?
+551: 0
+552: 0
+553: 0
+554: 0
+555: 0
+556: 0
+557: 18, dipped to 16.3 once. Unclear what value represents
+558: Time in minutes since working in upper tank (probably)
+559: Time in minutes spent working in upper tank (probably)
+560: 40.0 constantly, unclear what it represents
+* 561: 36.7 setpoint water flow (börvärde framledning)
+562: 0
+563: 60.0 max water flow temp?(max framledning?)
+564: 100.0 unclear what it represents
+* 565: 41.7 setpoint lower tank (börvärde undre tank)
+* 566: 58.0 setpoint upper tank (börvärde övre tank)
+567: 51.0 (constant) unclear what it represents
+568: 0
+569: 0
+570: 0
+571: 0
+572: 0.3
+*573: 0 upper tank 0.1 lower tank
+574-599 0.3, 0 or -0.1 constant
+600: -999.9
+* 601: 55 current value upper tank
+602: -999.9
+* 603: 40 current value lower tank
+604: -999.9
+* 605: 34 return value water flow temperature (radiator retur)
+* 606: 6 outside temperature
+* 607: 36 current value water flow temperature (radiator framledning)
+608: -999.9
+609: -999.9
+610: -999.9
+611: -999.9
+612: 4
+613: 4
+614: 4
+615: 330
+616: 320
+617: 13
+618: 1025
+619: 0
+620: 16385 and 0, might be fan speed (seems to be 0 when defrosting and not running heat pump)
+621: 0
+622: 0
+* 623: 0, 7.5 and 10. Correlates somewhat with 550(higher when heatpump not working?) chargepump, inverted values?
+624: 0
+
+625:  3
+626: 3
+627: 3
+628: 3
+629: 3
+630: 0
+631: 0.8 some kind of temperature sensor (probably)
+* 632: 55.20 temperature heatpump in
+* 633: 3.4 outside temperature (heatpump)
+* 634: 62 temperature heatpump out
+635: 80 some kinde of temperature sensor (probably)
+636: 3.1 temp sensor?
+637: 17.5 temp sensor? (follows heatpump in temperature)
+638: 3.5 temp sensor?
+639: -0.9 defrost sensor?
+640: 50.4 temp sensor?
+641: -0.5 defrost sensor?
+642: 51 no idea, 3.5 when compressor is stopped
+643: same as 642 but all values are halved
+644: 4.7 no idea,0 when compressor is stopped
+645: 0
+* 646: 31 defrost timer
+* 647: 0.9-0 countdown for defrost (in minutes?)
+648: 0, 14, 800, 1000 no idea
+649: 42.6 (no idea)
+650: 0, 1.6, 1.9, 43.5, 49.7 (something o do with defrost)
+651: ~20 normally, goes to 100 when defrosting
+652: 6-12 to 1000 when defrosting
+653: 0.3, 0.5, 49.7 (something o do with defrost)
+651: ~20 normally, goes to 100 when defrosting
+652: 6-12 normally off, lower, upper tank?, goes to 1000 when defrosting
+* 653: 0.3, 0.7, 1.5 off, lower, upper tank?
+* 654: 0.3 running in lower/upper, 0.4 defrosting, lower == off
+655: 0 constant
+656: 0 constant
+657: 0 constant
+658: 0 constant
+659: 0 constant
+660: ~20 goes to 60, probably something to do with defrost
+661-679: 0 constant
+
+
+curl -d "optType=ReadRealTimeData&pwd=SRKZMN5P8T" -X POST http://192.168.10.10
